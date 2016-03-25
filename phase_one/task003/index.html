@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IFE2016春季-第一阶段-任务三</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./img/gqd_logo.jpg">
+	<style type="text/css">/*本次实现中间列自适应宽度，各列高度均可撑开父元素的高度，采用的是改进浮动法*/
+	body{margin:0;padding: 0;}
+	img{width: 80px;height: 80px;}
+	#left,#center,#right{padding: 20px;background: #fff; border:1px solid #999;margin:20px 0 20px 20px;}
+	#left img{float: left;}
+	#left div{margin-left: 100px;}
+	#wrapper{margin:20px; background: #eee; border:1px solid #999;overflow: hidden;}
+	#outWrap{width: 100%;float:left;margin-left:-162px;}
+  #inWrap{margin-left:162px; }
+	#right{width: 80px;float: right;top:20px;right:20px; margin-right: 20px; padding-top: 0;}/*右外边距为20px，覆盖掉之前的0的预设*/
+	#right img{margin-top: 20px;}
+	#left{width: 160px;float: left;}
+	#cenWrap{width: 100%;float: right;margin-right: -222px;}
+	#center{margin-right: 222px;}
+	</style>
+</head>
+
+<body>
+  <div id="wrapper">
+   <div id="outWrap">
+   <div id="inWrap">
+  	<div id="left">
+  		<img src="./img/gqd_logo.jpg"><div>GQD团队</div>
+  	</div>
+  	<div id="cenWrap">
+	  	<div id="center">
+	  		<p>关于我们GQD团队的介绍：</p>
+	  		<p>刚刚组建好这个团队，想着要给团队起了名字的时候，我还是有些迷茫的，不知道起个什么名字才好，也不确定团队名字
+	  		最后所要呈现的效果。不过，时间有些紧，不容得你多想，于是我就想着参照“英雄联盟”的战队名字，例如EDG、OMG之类的，
+	  		起个相像的就可以了；如此一来也可以表明我们像作战一样征战代码的热情。于是，GQD这个名字就这样诞生了。</p>
+	  		<p>GQD有三个大写的英文字母组成，其各自代表的含义也很简单。</p>
+	  		<p>G，是广东Guangdong的首字母，因为我们团队的三名成员全都来自广东省。虽然我们的队员有的在广州，有的在东莞，所在
+	  		的地区不一样，但都是在广东的管辖范畴。所以，G，是表明我们所在的地区。</p>
+	  		<p>大写字母Q的含义就更简单了，就是“前端”，意味着我们团队所做的是与前端相关的东西、项目。</p>
+	  		<p>D，就是just do it!一句英文表达我们团队的一个态度，也同时是激励我们自己要一直走下去，坚持到最后。</p>
+	  		<p>所以，加油了，各位！</p>
+	  	</div>
+	  </div>
+   </div>
+   </div>	
+  	<div id="right">
+  		<img src="./img/LIANG.jpg">
+  		<img src="./img/csea.jpg">
+  		<img src="./img/cucumber.jpg">
+  		<img src="./img/do.jpg">
+  	</div>
+  	
+  </div>
+</body>
+</html>
