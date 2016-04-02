@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IFE2016春季--banner自动轮播图</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="./gqd_logo.jpg">
+	<style type="text/css">
+		body,ul,li,h3{margin: 0;padding: 0;}
+		#wrapper{}
+
+		/*banner自动轮播图*/
+		.banner_box{width:300px;height: 200px;margin:20px auto;overflow: hidden; position: relative;}
+		.banner_con{font-size: 0;-webkit-text-size-adjust:none;width: 300%;height: 100%;}
+		.banner_con li{display: inline-block;list-style: none; width: 300px;height: 200px;}
+		.banner_con li:nth-child(1){background-color: red;}
+		.banner_con li:nth-child(2){background-color: yellow;}
+		.banner_con li:nth-child(3){background-color: blue;}
+		@-webkit-keyframes slide{
+			from, to { left: 0; }
+	    20% { left: 0; }
+	    33% { left: -300px; }
+	    53% { left: -300px; }
+	    66% { left: -600px; }
+	    86% { left: -600px; }
+		}
+		.banner_con{position: relative;
+		-webkit-animation:slide 9s infinite;
+		-moz-animation:slide 9s infinite;}
+
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<div class="banner_box">
+		<ul class="banner_con">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+</div>
+</body>
+</html>
